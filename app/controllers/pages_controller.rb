@@ -22,7 +22,7 @@ class PagesController < ApplicationController
       Coinbase::OAuthClient.new \
         Rails.application.secrets.coinbase_api_key,
         Rails.application.secrets.coinbase_api_secret,
-        @old_tokens.to_h
+        @old_tokens
 
     new_token = client.refresh!
 
