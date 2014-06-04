@@ -25,7 +25,7 @@ COINBASE_API_SECRET="your api secret goes here"
 
 ## Other Notes
 
-* An very similar, [official repo](https://github.com/coinbase/coinbase-oauth-rails-example)
+* A very similar, [official repo](https://github.com/coinbase/coinbase-oauth-rails-example)
 
 ## License
 
