@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   helper_method def current_user
-    return @_current_user if @_current_user.present?
+    return @_current_user if defined?( @_current_user )
 
     user =
       if ( session_user_id = session[ :user_id ] ).present?
