@@ -1,0 +1,23 @@
+<%
+
+  options = ( @options or [] )
+
+%>
+
+<h1>Authentication Options</h1>
+
+<% if options.any? %>
+  <ul>
+    <% options.each do | option | %>
+      <li>
+        <%=
+          link_to \
+            option.titleize,
+            "/auth/#{ option }"
+        %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <strong>No configured authentication options...</strong>
+<% end %>
